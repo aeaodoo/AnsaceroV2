@@ -33,3 +33,9 @@ class resCompany(models.Model):
     _inherit = 'res.company'
 
     l10n_mx_edi_colony = fields.Many2one('colony.catalogues', string="Nombre de Colonia")
+
+class fleetVehicle(models.Model):
+    _inherit = 'fleet.vehicle'
+
+    gps_imei = fields.Char(string="GPS (IMEI)")
+    sim = fields.Char(string="SIM")
