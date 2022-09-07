@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'sale_management', 'contacts', 'account_accountant', 'account','fleet'],
+    'depends': ['base', 'sale_management', 'contacts', 'account_accountant', 'account','fleet','sale_management'],
 
     # always loaded
     'data': [
@@ -29,6 +29,7 @@
         'views/product_template_form_view.xml',
         'views/colony_catalogues_views.xml',
         'views/fleet_vehicle_form_view.xml',
+        'views/sale_orde_form_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

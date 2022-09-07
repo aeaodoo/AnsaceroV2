@@ -39,3 +39,16 @@ class fleetVehicle(models.Model):
 
     gps_imei = fields.Char(string="GPS (IMEI)")
     sim = fields.Char(string="SIM")
+    employee_id = fields.Many2one("hr.employee", string="Conductor",
+                                help="Dirección del conductor del vehículo")
+    unique_identifier = fields.Char(string="Unique identifier",
+                                  help="Code to identify the vehicles")#identificador único
+
+pay_state_option = [("credit","CREDITO"),("pending","DIRECTO EN CAJA"),("pay","DOMICILIO DE CLIENTE")]
+delivery_type_option = [("home","ENTREGA A DOMICILIO"),("pos","ENTREGA EN PUNTO DE VENTA")]
+class fleetVehicle(models.Model):
+    _inherit = 'sale.order'
+
+    pay_state = fields.Selection(pay_state_option, string="Forma de cobro")#Forma de cobro
+    delivery_type = fields.Selection(delivery_type_option, string="Tipo de Entrega")  # Tipo de Entrega
+    delivery_cp = fields.Char(string="CP de Entrega")  # CP de Entrega
