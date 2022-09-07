@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-11 21:52+0000\n"
-"PO-Revision-Date: 2022-08-11 21:52+0000\n"
+"POT-Creation-Date: 2022-09-07 02:26+0000\n"
+"PO-Revision-Date: 2022-09-07 02:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,10 +26,25 @@ msgid "C.P."
 msgstr ""
 
 #. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_sale_order__delivery_cp
+msgid "CP de Entrega"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model.fields.selection,name:changes_ansacero.selection__sale_order__pay_state__credit
+msgid "CREDITO"
+msgstr ""
+
+#. module: changes_ansacero
 #: model:ir.model.fields,field_description:changes_ansacero.field_res_partner__code_plus
 #: model:ir.model.fields,field_description:changes_ansacero.field_res_users__code_plus
 msgid "Code plus"
 msgstr "Código plus"
+
+#. module: changes_ansacero
+#: model:ir.model.fields,help:changes_ansacero.field_fleet_vehicle__unique_identifier
+msgid "Code to identify the vehicles"
+msgstr "Codigo para identificar los vehículos"
 
 #. module: changes_ansacero
 #: model:ir.ui.menu,name:changes_ansacero.menu_colony_catalogues
@@ -47,6 +62,16 @@ msgstr "Catálogos de colonias"
 #: model:ir.model.fields,field_description:changes_ansacero.field_colony_catalogues__name
 msgid "Colony name"
 msgstr "Nombre de colonia"
+
+#. module: changes_ansacero
+#: model:ir.model,name:changes_ansacero.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_fleet_vehicle__employee_id
+msgid "Conductor"
+msgstr ""
 
 #. module: changes_ansacero
 #: model:ir.model,name:changes_ansacero.model_res_partner
@@ -69,9 +94,44 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: changes_ansacero
+#: model:ir.model.fields.selection,name:changes_ansacero.selection__sale_order__pay_state__pending
+msgid "DIRECTO EN CAJA"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model.fields.selection,name:changes_ansacero.selection__sale_order__pay_state__pay
+msgid "DOMICILIO DE CLIENTE"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model.fields,help:changes_ansacero.field_fleet_vehicle__employee_id
+msgid "Dirección del conductor del vehículo"
+msgstr ""
+
+#. module: changes_ansacero
 #: model:ir.model.fields,field_description:changes_ansacero.field_colony_catalogues__display_name
 msgid "Display Name"
 msgstr "Nombre para mostrar"
+
+#. module: changes_ansacero
+#: model:ir.model.fields.selection,name:changes_ansacero.selection__sale_order__delivery_type__home
+msgid "ENTREGA A DOMICILIO"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model.fields.selection,name:changes_ansacero.selection__sale_order__delivery_type__pos
+msgid "ENTREGA EN PUNTO DE VENTA"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_sale_order__pay_state
+msgid "Forma de cobro"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_fleet_vehicle__gps_imei
+msgid "GPS (IMEI)"
+msgstr ""
 
 #. module: changes_ansacero
 #: model_terms:ir.actions.act_window,help:changes_ansacero.action_colony_catalogues
@@ -111,6 +171,7 @@ msgid "Line"
 msgstr "Línea"
 
 #. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_res_company__l10n_mx_edi_colony
 #: model:ir.model.fields,field_description:changes_ansacero.field_res_partner__l10n_mx_edi_colony
 #: model:ir.model.fields,field_description:changes_ansacero.field_res_users__l10n_mx_edi_colony
 msgid "Nombre de Colonia"
@@ -165,9 +226,34 @@ msgid "Redes Sociales"
 msgstr ""
 
 #. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_fleet_vehicle__sim
+msgid "SIM"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model,name:changes_ansacero.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: changes_ansacero
 #: model:ir.model.fields,field_description:changes_ansacero.field_colony_catalogues__state_id
 msgid "State"
 msgstr "Estado"
+
+#. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_sale_order__delivery_type
+msgid "Tipo de Entrega"
+msgstr ""
+
+#. module: changes_ansacero
+#: model:ir.model.fields,field_description:changes_ansacero.field_fleet_vehicle__unique_identifier
+msgid "Unique identifier"
+msgstr "Identificador único"
+
+#. module: changes_ansacero
+#: model:ir.model,name:changes_ansacero.model_fleet_vehicle
+msgid "Vehicle"
+msgstr "Vehículo"
 
 #. module: changes_ansacero
 #: model:ir.model.fields,field_description:changes_ansacero.field_colony_catalogues__city_id
